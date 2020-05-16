@@ -21,7 +21,7 @@ export default class LoginFormComponent extends Component {
   onSelectChanged(evt) {
     this.userId = evt.target.value;
   }
-
+  
   @action
   onLoginFormSubmit(evt) {
     evt.preventDefault();

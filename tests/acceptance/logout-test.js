@@ -17,5 +17,8 @@ module('Acceptance | Loggin out', function(hooks) {
 
     assert.equal(currentURL(), '/login');
 
+    await click('.team-sidebar__logout-button');
+    assert.equal(currentURL(), '/logout');
+
   });
 });
